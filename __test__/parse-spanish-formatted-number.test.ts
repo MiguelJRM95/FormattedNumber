@@ -11,5 +11,7 @@ describe('parseSpanishFormattedNumber', () => {
     test('SHOULD return an error WHEN the number is not a valid spanish number', () => {
         expect(() => parseSpanishFormattedNumber("10.0")).toThrow("Error")
         expect(() => parseSpanishFormattedNumber("10.00")).toThrow("Error")
+        expect(() => parseSpanishFormattedNumber("")).toThrow("Error")
+        expect(() => parseSpanishFormattedNumber("1A,30")).toThrow("Error")
     })
 })
