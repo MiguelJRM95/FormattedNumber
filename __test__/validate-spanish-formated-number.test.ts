@@ -10,7 +10,8 @@ describe('isValidSpanishNumber', () => {
     })
 
     test('should return false', () => {
-        expect(isValidNumber("1.0")).toBe(true);
-        expect(isValidNumber("1,234.567")).toBe(true);
+        expect(isValidNumber("1.0")).toBe(false);
+        expect(isValidNumber("1,234.567")).toBe(false);
+        expect(isValidNumber("1,23.4567")).toBe(false);
     })
 })
