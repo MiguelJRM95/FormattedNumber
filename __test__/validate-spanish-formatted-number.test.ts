@@ -1,4 +1,4 @@
-import isValidNumber from '../src/validate-spanish-formated-number';
+import isValidNumber from '../src/validate-spanish-formatted-number';
 
 describe('isValidSpanishNumber', () => {
     test('should return true', () => {
